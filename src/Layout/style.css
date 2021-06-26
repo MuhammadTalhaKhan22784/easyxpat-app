@@ -27,7 +27,7 @@
 /* footer */
 
 .footer_main {
-  max-width: 1900px;
+  max-width: 2000px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@
 }
 
 .footer_content {
-  max-width: 1400px;
+  max-width: 2000px;
   width: 100%;
   height: max-content;
   display: flex;
@@ -143,7 +143,7 @@
 }
 
 .footer_copyright {
-  max-width: 1400px;
+  max-width: 1900px;
   width: 100%;
   /* padding-left: 15rem; */
   height: 120px;
