@@ -20,7 +20,8 @@
 
 .header .nav-link {
   margin: 0 15px;
-  color: #ffffff;
+  color: #ffffff !important;
+  font-family: "Rubik", sans-serif !important;
 }
 
 /* footer */
@@ -47,7 +48,7 @@
 }
 
 .footer_content {
-  margin: 0 auto;
+  max-width: 1400px;
   width: 100%;
   height: max-content;
   display: flex;
@@ -57,7 +58,6 @@
   /* transform: translateX(260px); */
   justify-content: flex-start;
 }
-
 
 .fc_text {
   width: 275px;
@@ -143,6 +143,7 @@
 }
 
 .footer_copyright {
+  max-width: 1400px;
   width: 100%;
   /* padding-left: 15rem; */
   height: 120px;
