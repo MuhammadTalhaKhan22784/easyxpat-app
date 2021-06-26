@@ -1,5 +1,6 @@
 import { Box } from "@material-ui/core";
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./style.css";
 // assets
 import logo from "../Assets/logo.svg";
@@ -11,9 +12,9 @@ const Header = () => {
       <Box className="">
         <nav className="header navbar navbar-expand-lg navbar-light">
           <div className="container">
-            <a className="navbar-brand" href="#">
+            <NavLink className="navbar-brand" to="/">
               <img src={logo} alt="..." />
-            </a>
+            </NavLink>
             <button
               className="navbar-toggler"
               type="button"
@@ -31,14 +32,14 @@ const Header = () => {
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <NavLink exact className="nav-link" to="/about">
                     ABOUT
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <NavLink exact className="nav-link" to="/guide">
                     GUIDES
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
@@ -47,7 +48,7 @@ const Header = () => {
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
-                <img src={user} alt="..." />
+                    <img src={user} alt="..." />
                   </a>
                 </li>
               </ul>

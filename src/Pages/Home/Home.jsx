@@ -3,6 +3,7 @@ import "./Home.css";
 import HomeHero from "./Component/HomeHero";
 import NeedWhat from "./Component/NeedWhat";
 import HomeContent from "./Component/HomeContent";
+import Header from "../../Layout/Header";
 import Footer from "../../Layout/Footer";
 
 // assets
@@ -14,6 +15,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <div className="hero">
+      {/* <Header /> */}
         <HomeHero />
         <NeedWhat />
         <HomeContent

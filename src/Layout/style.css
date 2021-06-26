@@ -47,6 +47,16 @@
   background-image: url("../Assets/Group\ 36.png");
 }
 
+.footer2 {
+  margin-top: 5rem;
+  width: 90%;
+  background-image: url("../Assets/BG\ \(1\).png");
+  background-size: cover;
+  height: 30vh;
+  /* background-size: 100% 100%; */
+  background-repeat: no-repeat;
+}
+
 .footer_content {
   max-width: 2000px;
   width: 100%;

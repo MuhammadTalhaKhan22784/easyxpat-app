@@ -1,7 +1,36 @@
 .aboutus_section {
-    width: 100%;
+  width: 100%;
+  margin: 3rem 0;
 }
 
-.aboutus_section p{
-    width: 90%;
+.about_wrapper {
+  width: 86%;
+  margin: 0 auto;
 }
+
+/* .aboutus_section p,
+.aboutus_section h2 {
+  width: 90%;
+  margin: 0 auto;
+} */
+
+.about_wrapper h2 {
+  color: rgba(37, 140, 235, 0.989906);
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.about_wrapper p,.about_wrapper ul {
+  font-family: "Rubik", sans-serif !important;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: #402b2b;
+}
+
+/* available_guide_section */
+
+.available_guide_section {
+  width: 100%;
+}
+

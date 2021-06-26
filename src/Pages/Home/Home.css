@@ -1,14 +1,24 @@
+.hero .header {
+  background-image: none;
+  background: transparent;
+  /* position: absolute; */
+}
+
+.hero .header .container {
+  max-width: 1519px;
+}
+
 .hero_section {
   width: 100%;
   height: 100vh;
   background-image: url("../../Assets/Scene.svg");
-  background-size: 100%;
+  background-size: 100% ;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  padding-left: 13rem;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: flex-start; */
+  /* flex-direction: column; */
+  padding-left: 9vw;
 }
 
 .hero_section h1 {
@@ -98,4 +108,40 @@
 
 .hc_right img {
   width: 90%;
+}
+
+@media screen and (max-width: 991px) {
+  .header {
+    padding: 0px 8vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero_section > div {
+    /* margin-top: -100px; */
+  }
+
+  .hero_section h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .hero_section > div {
+    /* margin-top: -180px; */
+  }
+
+  .hero_section h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 547px) {
+  .hero_section > div {
+    /* margin-top: -220px; */
+  }
+
+  .hero_section h1 {
+    font-size: 1.5rem;
+  }
 }
