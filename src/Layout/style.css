@@ -69,6 +69,11 @@
   justify-content: flex-start;
 }
 
+.fc_line {
+  display: flex;
+  align-items: center;
+}
+
 .fc_text {
   width: 275px;
   margin-left: 2rem;
@@ -112,7 +117,7 @@
   box-sizing: border-box;
   border-radius: 5px;
   outline: none;
-  height: 40px;
+  height: 50px;
   padding: 10px;
   color: #402b2b;
   margin-top: 1.2rem;
@@ -184,4 +189,118 @@
   justify-content: space-between;
   align-items: center;
   transform: translateX(-140px);
+}
+
+/*  */
+
+.fimg_mob {
+  display: none;
+}
+
+@media screen and (max-width: 1074px) {
+  .footer_copyright {
+    justify-content: space-around;
+  }
+  .fbc_copyright,
+  .fbc_icon {
+    transform: none;
+    width: max-content;
+  }
+  .fbc_copyright span,
+  .fbc_icon img {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .fc_form {
+    transform: translate(30px, -100px);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-light .navbar-toggler {
+    border-color: #00000054;
+  }
+
+  .navbar-light .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .header .navbar-nav {
+    padding: 2rem 0;
+    line-height: 2rem;
+    position: absolute;
+    z-index: 1;
+    background: #80b5e6de;
+    width: 100%;
+    right: 0;
+  }
+
+  /*  */
+  .footer_main {
+    margin-top: 18rem;
+    position: relative;
+  }
+  .footer {
+    height: max-content;
+    background-image: none;
+    background: #00379f;
+  }
+  .footer2 {
+    width: 100%;
+    background: #0fa194;
+  }
+  .fimg_mob {
+    display: block;
+    top: -180px;
+    left: 0;
+    position: absolute;
+    width: 300px;
+    object-fit: contain;
+  }
+  .footer_content {
+    margin-top: 20vh;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+  .fc_form {
+    transform: none;
+    margin-top: 2rem;
+  }
+  .footer_bottom {
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    margin: 2rem auto;
+  }
+  .fb_text {
+    margin: 2rem auto;
+    width: 298px;
+  }
+  .fb_logo {
+    text-align: center;
+    width: max-content;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fc_form {
+    width: 90%;
+    padding: 29px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .footer_copyright {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .fc_line {
+    width: 83%;
+    margin: 0 auto;
+    justify-content: center;
+  }
 }

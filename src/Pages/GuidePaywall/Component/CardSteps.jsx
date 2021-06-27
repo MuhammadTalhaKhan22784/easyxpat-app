@@ -3,7 +3,7 @@ import { Box } from "@material-ui/core";
 import data from "../steps.json";
 
 const CardSteps = () => {
-  console.log(data);
+  // console.log(data);
   // let [show, setShow] = useState({
   //   f: false,
   //   f1: false,

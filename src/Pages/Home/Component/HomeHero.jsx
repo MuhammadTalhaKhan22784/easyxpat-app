@@ -8,9 +8,9 @@ const HomeHero = () => {
     <React.Fragment>
       <div className="hero_section">
         <Header />
-        <div>
+        <div className="hs_content">
           <h1>
-            Immigration to Germany. <br /> Made simple.
+            Immigration to Germany. Made simple.
           </h1>
           <GetStarted />
         </div>

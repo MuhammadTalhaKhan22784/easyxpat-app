@@ -8,21 +8,24 @@ import logo from "../Assets/logo.svg";
 import fbIcon from "../Assets/f.svg";
 import twIcon from "../Assets/t.svg";
 import inIcon from "../Assets/i.svg";
+import fImg from "../Assets/Group 35.png";
 const Footer = () => {
   return (
     <React.Fragment>
       <Box className="footer_main">
         <Box className="footer">
           <Box className="footer_content">
+            <img className="fimg_mob" src={fImg} alt="..." />
             <Box className="fc_line">
               <img src={rectangleLine} alt="..." />
-            </Box>
-            <Box className="fc_text">
-              <p>
-                We provide guides and personalised tracking for every step to
-                make your immigration to Germany a <strong>success </strong>,
-                Sign up to get started today!
-              </p>
+
+              <Box className="fc_text">
+                <p>
+                  We provide guides and personalised tracking for every step to
+                  make your immigration to Germany a <strong>success </strong>,
+                  Sign up to get started today!
+                </p>
+              </Box>
             </Box>
             <form className="fc_form">
               <Box className="input_wrap">
@@ -65,9 +68,9 @@ const Footer = () => {
             <span>Impressum</span>
           </Box>
           <Box className="fbc_icon">
-              <img src={fbIcon} alt="..." />
-              <img src={twIcon} alt="..." />
-              <img src={inIcon} alt="..." />
+            <img src={fbIcon} alt="..." />
+            <img src={twIcon} alt="..." />
+            <img src={inIcon} alt="..." />
           </Box>
         </Box>
       </Box>
