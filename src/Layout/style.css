@@ -241,6 +241,9 @@
     margin-top: 18rem;
     position: relative;
   }
+  .footer_main2 {
+    margin-top: 2rem;
+  }
   .footer {
     height: max-content;
     background-image: none;

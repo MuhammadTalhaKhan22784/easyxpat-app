@@ -11,7 +11,7 @@ import inIcon from "../Assets/i.svg";
 const Footer2 = () => {
   return (
     <React.Fragment>
-      <Box className="footer_main">
+      <Box className="footer_main footer_main2">
         <Box className="footer footer2">
           <Box className="footer_bottom">
             <Box className="fb_logo">
