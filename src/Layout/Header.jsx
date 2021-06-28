@@ -42,14 +42,14 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <NavLink className="nav-link" to="#">
                     RESOURCES
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <NavLink className="nav-link" to="#">
                     <img src={user} alt="..." />
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>

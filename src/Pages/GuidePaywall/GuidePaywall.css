@@ -214,7 +214,8 @@
     font-size: 1.5rem;
     width: 82%;
   }
-  .card_steps_section h2 {
+  .card_steps_section h2,
+  .cus_dropdown button span {
     font-size: 1.5rem;
   }
 }

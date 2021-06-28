@@ -1,9 +1,7 @@
 import React from "react";
 import "./style.css";
-import GetStarted from "../Component/Button/GetStarted";
 import { Box } from "@material-ui/core";
 // assets
-import rectangleLine from "../Assets/Rectangle 18.svg";
 import logo from "../Assets/logo.svg";
 import fbIcon from "../Assets/f.svg";
 import twIcon from "../Assets/t.svg";
