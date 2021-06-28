@@ -6,6 +6,10 @@ const GuideProcess = () => {
   const [apiData, setApiData] = useState([]);
   const [val, setVal] = useState("");
   const [val2, setVal2] = useState("");
+  const [data,setData] = useState({
+    name : "",
+    cities : [],
+  })
 
   useEffect(() => {
     axios
@@ -17,7 +21,11 @@ const GuideProcess = () => {
   }, []);
 
   const handleSelectName = (e) => {
-    setVal(e)
+    setVal(e.name)
+    setData({
+      name : e.name,
+      cities : [e.city]
+    })
   };
   const handleSelectCity = (e) => {
     setVal2(e)
@@ -41,7 +49,7 @@ const GuideProcess = () => {
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               {apiData.map((d, index) => {
                 return (
-                  <li key={index} onClick={() => handleSelectName(d.name)}>
+                  <li key={index} onClick={() => handleSelectName(d)}>
                     <span className="dropdown-item">{d.name}</span>
                   </li>
                 );
@@ -61,7 +69,13 @@ const GuideProcess = () => {
               <img src={drpdownImg} alt="..." />
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              {apiData.map((d, index) => {
+              {data.cities ? data.cities.map((d, index) => {
+                return (
+                  <li key={index} onClick={() => handleSelectCity(d)}>
+                    <span className="dropdown-item">{d}</span>
+                  </li>
+                );
+              }) : apiData.map((d, index) => {
                 return (
                   <li key={index} onClick={() => handleSelectCity(d.city)}>
                     <span className="dropdown-item">{d.city}</span>

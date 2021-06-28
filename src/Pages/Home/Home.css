@@ -1,7 +1,14 @@
+.hero {
+  margin-bottom: 9rem;
+}
+
+.user_logo {
+  width: 50px;
+}
+
 .hero .header {
   background-image: none;
   background: transparent;
-  /* position: absolute; */
 }
 
 .hero .header .container {
@@ -15,18 +22,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: flex-start; */
-  /* flex-direction: column; */
-  /* padding-left: 9vw; */
 }
 
 .hero_section h1 {
   font-family: "DM Serif Display", serif;
-  font-size: 3.5rem;
+  font-size: 4.2rem;
   letter-spacing: 3px;
-  width: 393px;
+  width: 500px;
+  font-weight: 600;
   line-height: 1.2;
   color: #ffffff;
 }
@@ -80,6 +83,7 @@
 
 .home_content_section {
   width: 100%;
+  margin: 3rem 0;
 }
 
 .container_wraper {
@@ -122,22 +126,18 @@
   }
 }
 
-@media screen and (max-width: 900px) {
-  .hero_section > div {
-    /* margin-top: -100px; */
+@media screen and (max-width: 767px) {
+  .home_content_section {
+    margin: 0;
   }
-
-  /* .hero_section h1 {
-    font-size: 2rem;
-  } */
 }
 
-/* @media screen and (max-width: 500px) {
-  .fc_form {
-    width: 90%;
-    padding: 29px;
+@media screen and (max-width: 600px) {
+  .hero_section h1 {
+    font-size: 3rem;
+    width: 100%;
   }
-} */
+}
 
 @media screen and (max-width: 450px) {
   .hero_section {
@@ -155,9 +155,6 @@
   .hc_left p {
     width: 100%;
     text-align: left;
-  }
-  .hero_section h1 {
-    width: 100%;
   }
 }
 

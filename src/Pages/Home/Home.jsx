@@ -6,7 +6,7 @@ import HomeContent from "./Component/HomeContent";
 import Footer from "../../Layout/Footer";
 
 // assets
-import Illustration from "../../Assets/Illustration.svg";
+import Illustration from "../../Assets/Illustration (2).png";
 import illustrations from "../../Assets/illustrations.svg";
 import Illustration1 from "../../Assets/Illustration1.svg";
 

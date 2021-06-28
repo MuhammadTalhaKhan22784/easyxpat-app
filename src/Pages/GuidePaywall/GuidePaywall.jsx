@@ -11,7 +11,7 @@ const GuidePaywall = () => {
     <React.Fragment>
       <Header />
       <GuideProcess />
-      <OverallProgress />
+      {/* <OverallProgress /> */}
       <CardSteps />
       <AdditionalLink />
       <Footer2 />

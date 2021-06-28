@@ -44,7 +44,8 @@
 
 .cus_dropdown button img {
   width: 30px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-left: 20px;
 }
 
@@ -93,7 +94,8 @@
 .card_steps_section h2 {
   font-family: "Open Sans", sans-serif !important;
   font-size: 2.2rem;
-  font-weight: 700;
+  font-weight: bold;
+  color: rgba(37, 140, 235, 0.989906);
 }
 
 .card_wrapper {
@@ -184,6 +186,8 @@
 
 @media screen and (max-width: 600px) {
   .guide_process {
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
     height: max-content !important;
     padding: 3rem 0;
   }
