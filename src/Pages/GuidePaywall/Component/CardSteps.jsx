@@ -16,7 +16,7 @@ const CardSteps = ({ ApiData }) => {
   return (
     <React.Fragment>
       <Box className="card_steps_section">
-        <h2>{ApiData.name}: Step by Step</h2>
+        <h2> { ApiData.name}: Step by Step</h2>
         <Box className="card_wrapper">
           {filterData &&
             filterData.map((val) => (

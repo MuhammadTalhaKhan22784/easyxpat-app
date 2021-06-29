@@ -18,6 +18,7 @@ const GuideProcess = () => {
       .get("https://easyxpat-procedure.herokuapp.com/procedures")
       .then((res) => {
         setApiData(res.data);
+        setData(res.data[0])
       })
       .catch((error) => console.log(error));
   }, []);
