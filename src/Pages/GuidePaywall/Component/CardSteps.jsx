@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Box } from "@material-ui/core";
 import data from "../steps.json";
 
-const CardSteps = () => {
+const CardSteps = ({ ApiData }) => {
   const [show, setShow] = useState("");
+
+  const filterData = data.filter((val) => val.procedure_id === ApiData.id);
 
   const handleOpen = (e) => {
     setShow(e);
@@ -16,32 +18,24 @@ const CardSteps = () => {
       <Box className="card_steps_section">
         <h2>Blue Card: Step by Step</h2>
         <Box className="card_wrapper">
-          {data.map((val) => (
-            <Box className="card_steps_content" key={val.id}>
-              <Box
-                className={`c_steps ${
-                  show !== val.id ? "c_steps2" : "c_steps1"
-                }`}
-                onClick={() => {
-                  show !== val.id ? handleOpen(val.id) : handleClose("");
-                }}
-              >
-                <h2>{show !== val.id ? val.name : val.description}</h2>
+          {filterData &&
+            filterData.map((val) => (
+              <Box className="card_steps_content" key={val.id}>
+                <Box
+                  className={`c_steps ${
+                    show !== val.id ? "c_steps2" : "c_steps1"
+                  }`}
+                  onClick={() => {
+                    show !== val.id ? handleOpen(val.id) : handleClose("");
+                  }}
+                >
+                  <h2>{show !== val.id ? val.name : val.name}</h2>
+                </Box>
+                <p style={{ display: show !== val.id ? "none" : "block" }}>
+                  {val.description}
+                </p>
               </Box>
-              <p style={{ display: show !== val.id ? "none" : "block" }}>
-                {val.description}
-                <br />
-                <br />
-                The central department for the foreign education service (ZAB)
-                offers an online- database where one can check which foreign
-                university degrees are accepted in Germany. If the database does
-                not offer helpful information, EU blue card applicants need to
-                apply for an individual check of their degrees. This check is
-                not for free and needs to be presented at the foreign
-                department.
-              </p>
-            </Box>
-          ))}
+            ))}
         </Box>
       </Box>
     </React.Fragment>

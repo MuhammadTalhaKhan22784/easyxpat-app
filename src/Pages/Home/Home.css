@@ -6,6 +6,16 @@
   width: 50px;
 }
 
+.login_btn {
+  width: 80px;
+  font-family: "Rubik", sans-serif !important;
+  background: #00379F !important;
+  color: white !important;
+  font-weight: 400 !important;
+  text-transform: initial !important;
+  border-radius: 5px !important;
+}
+
 .hero .header {
   background-image: none;
   background: transparent;

@@ -5,8 +5,11 @@ import "./style.css";
 // assets
 import logo from "../Assets/logo.svg";
 import user from "../Assets/user.png";
+import LoginBtn from "../Component/Button/Login";
+import { useState } from "react";
 
-const Header = () => {
+const Header = (props) => {
+  const [show] = useState(true);
   return (
     <>
       <Box className="">
@@ -48,7 +51,11 @@ const Header = () => {
                 </li>
                 <li className="nav-item">
                   <NavLink className="nav-link" to="#">
-                    <img className="user_logo" src={user} alt="..." />
+                    {show === props.show ? (
+                      <LoginBtn />
+                    ) : (
+                      <img className="user_logo" src={user} alt="..." />
+                    )}
                   </NavLink>
                 </li>
               </ul>

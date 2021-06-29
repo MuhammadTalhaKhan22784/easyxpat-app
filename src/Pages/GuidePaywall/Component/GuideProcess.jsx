@@ -2,14 +2,16 @@ import React, { useEffect, useState } from "react";
 import { Box } from "@material-ui/core";
 import axios from "axios";
 import drpdownImg from "../../../Assets/Drop Down.png";
+import CardSteps from "./CardSteps";
 const GuideProcess = () => {
   const [apiData, setApiData] = useState([]);
   const [val, setVal] = useState("");
   const [val2, setVal2] = useState("");
-  const [data,setData] = useState({
-    name : "",
-    cities : [],
-  })
+  const [data, setData] = useState({
+    id: "",
+    name: "",
+    cities: [],
+  });
 
   useEffect(() => {
     axios
@@ -21,14 +23,15 @@ const GuideProcess = () => {
   }, []);
 
   const handleSelectName = (e) => {
-    setVal(e.name)
+    setVal(e.name);
     setData({
-      name : e.name,
-      cities : [e.city]
-    })
+      id: e.id,
+      name: e.name,
+      cities: [e.city],
+    });
   };
   const handleSelectCity = (e) => {
-    setVal2(e)
+    setVal2(e);
   };
   return (
     <React.Fragment>
@@ -69,23 +72,26 @@ const GuideProcess = () => {
               <img src={drpdownImg} alt="..." />
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              {data.cities ? data.cities.map((d, index) => {
-                return (
-                  <li key={index} onClick={() => handleSelectCity(d)}>
-                    <span className="dropdown-item">{d}</span>
-                  </li>
-                );
-              }) : apiData.map((d, index) => {
-                return (
-                  <li key={index} onClick={() => handleSelectCity(d.city)}>
-                    <span className="dropdown-item">{d.city}</span>
-                  </li>
-                );
-              })}
+              {data.cities
+                ? data.cities.map((d, index) => {
+                    return (
+                      <li key={index} onClick={() => handleSelectCity(d)}>
+                        <span className="dropdown-item">{d}</span>
+                      </li>
+                    );
+                  })
+                : apiData.map((d, index) => {
+                    return (
+                      <li key={index} onClick={() => handleSelectCity(d.city)}>
+                        <span className="dropdown-item">{d.city}</span>
+                      </li>
+                    );
+                  })}
             </ul>
           </div>
         </div>
       </Box>
+      <CardSteps ApiData={data} />
     </React.Fragment>
   );
 };
