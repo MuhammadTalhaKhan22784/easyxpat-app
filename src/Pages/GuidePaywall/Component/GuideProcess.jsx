@@ -30,6 +30,7 @@ const GuideProcess = () => {
       name: e.name,
       cities: [e.city],
     });
+    setVal2(e.city)
   };
   const handleSelectCity = (e) => {
     setVal2(e);

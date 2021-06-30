@@ -7,9 +7,9 @@
 }
 
 .login_btn {
-  width: 80px;
+  padding: 8px 31px !important;
   font-family: "Rubik", sans-serif !important;
-  background: #00379F !important;
+  background: #00379f !important;
   color: white !important;
   font-weight: 400 !important;
   text-transform: initial !important;
@@ -28,7 +28,9 @@
 .hero_section {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(transparent 30%, rgba(255, 255, 255 , .9)) , url("../../Assets/Scene.svg");
+  background-image: url("../../Assets/buildings-scene.png");
+  /* background: linear-gradient(transparent 30%, rgba(255, 255, 255, 0.9)),
+    url("../../Assets/buildings-scene.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -38,7 +40,7 @@
   font-family: "DM Serif Display", serif;
   font-size: 4.2rem;
   letter-spacing: 3px;
-  width: 500px;
+  /* width: 500px; */
   font-weight: 600;
   line-height: 1.2;
   color: #ffffff;
@@ -54,9 +56,9 @@
 }
 
 .gts_btn {
-  width: 180px;
+  /* width: 180px; */
   padding: 0 20px !important;
-  height: 48px !important;
+  height: 55px !important;
   display: flex !important;
   justify-content: space-between !important;
   font-family: "Rubik", sans-serif !important;
@@ -81,7 +83,7 @@
 
 .need_what_section p {
   font-size: 1.1rem;
-  max-width: 760px;
+  max-width: 70%;
   font-family: "Rubik", sans-serif !important;
   color: #402b2b;
   font-weight: 300 !important;
@@ -111,15 +113,17 @@
   font-family: "Rubik", sans-serif !important;
   font-weight: 700;
   letter-spacing: 3px;
-  width: 340px;
-  margin: 0 auto;
+  /* width: 340px; */
+  width: 55vh;
+  /* margin: 0 auto; */
 }
 
 .hc_left p {
   font-size: 1.1rem;
   margin-top: 2rem !important;
-  width: 340px;
-  margin: 0 auto;
+  /* width: 340px; */
+  width: 90%;
+  /* margin: 0 auto; */
 }
 
 .hc_right {
@@ -128,6 +132,14 @@
 
 .hc_right img {
   width: 90%;
+}
+
+.custom_revers_row .hc_left {
+  padding-left: 4rem;
+}
+
+.custom_revers_row .hc_left h2 {
+  width: max-content;
 }
 
 @media screen and (max-width: 991px) {
@@ -139,6 +151,13 @@
 @media screen and (max-width: 767px) {
   .home_content_section {
     margin: 0;
+  }
+  .custom_revers_row .hc_left {
+    padding-left: 0;
+  }
+  .hc_right img {
+    width: 45vh;
+    margin: 3rem 0;
   }
 }
 
@@ -172,5 +191,11 @@
   .hero_section h1,
   .need_what_section h1 {
     font-size: 2rem;
+  }
+  .hc_right img {
+    width: 40vh;
+  }
+  .need_what_section p {
+    max-width: 100%;
   }
 }

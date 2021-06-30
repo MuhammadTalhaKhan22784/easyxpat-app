@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import "./Home.css";
 import HomeHero from "./Component/HomeHero";
 import NeedWhat from "./Component/NeedWhat";
@@ -7,10 +7,13 @@ import Footer from "../../Layout/Footer";
 
 // assets
 import Illustration from "../../Assets/Illustration (2).png";
-import illustrations from "../../Assets/illustrations.svg";
-import Illustration1 from "../../Assets/Illustration1.svg";
+import illustrations from "../../Assets/illustrations.png";
+import Illustration1 from "../../Assets/Illustration (4).png";
 
 const Home = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <React.Fragment>
       <div className="hero">
@@ -30,7 +33,7 @@ const Home = () => {
           img={Illustration}
         />
         <HomeContent
-          className="row flex-row-reverse align-items-center"
+          className="row custom_revers_row flex-row-reverse align-items-center"
           heading="IN ENGLISH"
           text={
             <>

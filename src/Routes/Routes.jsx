@@ -10,7 +10,7 @@ const AppRoute = () => {
         <Switch>
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/about" component={About}></Route>
-          <Route exact path="/guide" component={GuidePaywall}></Route>
+          <Route exact path="/guides" component={GuidePaywall}></Route>
         </Switch>
       </Router>
     </React.Fragment>

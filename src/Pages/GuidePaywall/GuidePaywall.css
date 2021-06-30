@@ -138,12 +138,12 @@
 }
 
 .c_steps1 {
-  background-image: url("../../Assets/Group\ 36\ \(1\).png");
+  background-image: url("../../Assets/Group\ 37 (1).png");
   height: 15vh;
 }
 
 .c_steps2 {
-  background-image: url("../../Assets/Group\ 37.png");
+  background-image: url("../../Assets/Group\ 36 (2).png");
 }
 
 /* additional_link */
@@ -204,13 +204,12 @@
     font-size: 1.5rem;
     margin: 1rem auto;
   }
-}
-
-@media screen and (max-width: 460px) {
-  .card_steps_section h2 {
-    font-size: 2rem;
+  .card_steps_section h2,
+  .cus_dropdown button span {
+    font-size: 1.5rem;
   }
 }
+
 
 @media screen and (max-width: 425px) {
   .guide_process > h1 {
@@ -219,6 +218,13 @@
   }
   .card_steps_section h2,
   .cus_dropdown button span {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .card_steps_section h2,
+  .cus_dropdown button span {
+    font-size: 1.2rem;
   }
 }

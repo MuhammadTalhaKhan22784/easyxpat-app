@@ -6,7 +6,7 @@ import arrow from "../../Assets/Union.svg";
 const GetStarted = () => {
   return (
     <div>
-      <Button className="gts_btn"><span>Get Started</span> <img src={arrow} alt="..." /></Button>
+      <Button className="gts_btn"><span>Get Started</span> &nbsp; &nbsp; <img src={arrow} alt="..." /></Button>
     </div>
   );
 };

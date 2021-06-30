@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./style.css";
 import { Box } from "@material-ui/core";
 // assets
@@ -13,12 +14,20 @@ const Footer2 = () => {
         <Box className="footer footer2">
           <Box className="footer_bottom">
             <Box className="fb_logo">
-              <img src={logo} alt="..." />
+              <NavLink exact to="/">
+                <img src={logo} alt="..." />
+              </NavLink>
             </Box>
             <Box className="fb_text">
-              <span>ABOUT</span>
-              <span>GUIDES</span>
-              <span>RESOURCES</span>
+              <NavLink exact to="/about">
+                <span>ABOUT</span>
+              </NavLink>
+              <NavLink exact to="/guides">
+                <span>GUIDES</span>
+              </NavLink>
+              <NavLink exact to="#">
+                <span>RESOURCES</span>
+              </NavLink>
             </Box>
           </Box>
         </Box>
@@ -28,9 +37,9 @@ const Footer2 = () => {
             <span>Impressum</span>
           </Box>
           <Box className="fbc_icon">
-              <img src={fbIcon} alt="..." />
-              <img src={twIcon} alt="..." />
-              <img src={inIcon} alt="..." />
+            <img src={fbIcon} alt="..." />
+            <img src={twIcon} alt="..." />
+            <img src={inIcon} alt="..." />
           </Box>
         </Box>
       </Box>

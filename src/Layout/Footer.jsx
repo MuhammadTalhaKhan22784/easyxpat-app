@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./style.css";
 import GetStarted from "../Component/Button/GetStarted";
 import { Box } from "@material-ui/core";
@@ -53,12 +54,20 @@ const Footer = () => {
           </Box>
           <Box className="footer_bottom">
             <Box className="fb_logo">
-              <img src={logo} alt="..." />
+              <NavLink exact to="/">
+                <img src={logo} alt="..." />
+              </NavLink>
             </Box>
             <Box className="fb_text">
-              <span>ABOUT</span>
-              <span>GUIDES</span>
-              <span>RESOURCES</span>
+              <NavLink exact to="/about">
+                <span>ABOUT</span>
+              </NavLink>
+              <NavLink exact to="/guides">
+                <span>GUIDES</span>
+              </NavLink>
+              <NavLink exact to="#">
+                <span>RESOURCES</span>
+              </NavLink>
             </Box>
           </Box>
         </Box>

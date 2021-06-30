@@ -40,12 +40,12 @@ const Header = (props) => {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink exact className="nav-link" to="/guide">
+                  <NavLink exact className="nav-link" to="/guides">
                     GUIDES
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="#">
+                  <NavLink exact className="nav-link" to="#">
                     RESOURCES
                   </NavLink>
                 </li>
