@@ -18,11 +18,18 @@ const GuideProcess = () => {
       .get("https://easyxpat-procedure.herokuapp.com/procedures")
       .then((res) => {
         setApiData(res.data);
-        setData(res.data[0])
+        // setData(res.data[0]);
+        const { id, name, city } = res.data[0];
+        setData({
+          id,
+          name,
+          cities: [city],
+        });
+        setVal(name)
+        setVal2(city)
       })
       .catch((error) => console.log(error));
   }, []);
-
   const handleSelectName = (e) => {
     setVal(e.name);
     setData({
@@ -30,7 +37,7 @@ const GuideProcess = () => {
       name: e.name,
       cities: [e.city],
     });
-    setVal2(e.city)
+    setVal2(e.city);
   };
   const handleSelectCity = (e) => {
     setVal2(e);

@@ -93,7 +93,7 @@
   width: 450px;
   padding: 50px;
   background-color: #ffffff;
-  height: 360px;
+  height: max-content;
   transform: translate(80px, -100px);
   border-radius: 10px;
   box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
