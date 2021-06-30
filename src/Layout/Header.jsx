@@ -27,9 +27,6 @@ const Header = (props) => {
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
-              // onClick={() => {
-              //   setShowBtn(false);
-              // }}
             >
               {showBtn ? (
                 <span
@@ -50,7 +47,6 @@ const Header = (props) => {
             <div
               style={{ display: !showBtn ? "block" : "none" }}
               className="collapse navbar-collapse"
-              // id="navbarSupportedContent"
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
