@@ -10,6 +10,7 @@ import { useState } from "react";
 
 const Header = (props) => {
   const [show] = useState(true);
+  const [showBtn, setShowBtn] = useState(true);
   return (
     <>
       <Box className="">
@@ -26,12 +27,30 @@ const Header = (props) => {
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              // onClick={() => {
+              //   setShowBtn(false);
+              // }}
             >
-              <span className="navbar-toggler-icon" />
+              {showBtn ? (
+                <span
+                  onClick={() => {
+                    setShowBtn(false);
+                  }}
+                  className="navbar-toggler-icon"
+                />
+              ) : (
+                <i
+                  onClick={() => {
+                    setShowBtn(true);
+                  }}
+                  class="fas fa-times"
+                ></i>
+              )}
             </button>
             <div
+              style={{ display: !showBtn ? "block" : "none" }}
               className="collapse navbar-collapse"
-              id="navbarSupportedContent"
+              // id="navbarSupportedContent"
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">

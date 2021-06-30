@@ -62,7 +62,7 @@
   display: flex;
   align-items: flex-end;
   padding-left: 18vw;
-  margin-top: 22vh;
+  margin-top: 16vh;
   justify-content: flex-start;
 }
 
@@ -217,13 +217,20 @@
 
 @media screen and (max-width: 991px) {
   .navbar-light .navbar-toggler {
-    border-color: #00000054;
+    border-color: white;
+    background-color: white;
   }
 
   .navbar-light .navbar-toggler:focus {
     box-shadow: none;
   }
-
+  .navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+  }
+  .fa-times {
+    font-size: 1.2em;
+  }
   .header .navbar-nav {
     padding: 2rem 0;
     line-height: 2rem;
@@ -264,6 +271,12 @@
     flex-direction: column;
     align-items: center;
     padding-left: 0;
+  }
+  .fc_text {
+    width: 275px;
+  }
+  .fc_line {
+    width: max-content;
   }
   .fc_form {
     transform: none;
