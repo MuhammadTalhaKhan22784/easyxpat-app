@@ -23,7 +23,7 @@ const CardSteps = ({ ApiData }) => {
               <Box className="card_steps_content" key={val.id}>
                 <Box
                   className={`c_steps ${
-                    show !== val.id ? "c_steps2" : "c_steps1"
+                    show !== val.id ? "c_steps1" : "c_steps2"
                   }`}
                   onClick={() => {
                     show !== val.id ? handleOpen(val.id) : handleClose("");
