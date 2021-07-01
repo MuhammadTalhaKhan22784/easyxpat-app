@@ -33,6 +33,9 @@ const GuideProcess = () => {
           return p;
         }, []);
         setFdata(countList);
+        let ob = Object.keys(countList);
+        let x = res.data.filter((val) => val.name === ob[0]);
+        setCitiesAccording(x);
       })
       .catch((error) => console.log(error));
   }, []);
@@ -44,14 +47,21 @@ const GuideProcess = () => {
     ss.length &&
       ss.map((v, i) => {
         return setData({
-          id: v.id,
-          name: v.name,
-          cities: v.city,
+          id: ss[0].id,
+          name: ss[0].name,
+          cities: val2,
         });
       });
   };
-  const handleSelectCity = (e) => {
-    setVal2(e);
+  const handleSelectCity = (e, d) => {
+    let ss = apiData.filter((val) => val.id === d.id);
+    setVal2(ss[0].city);
+    setData({
+      id: ss[0].id,
+      name: ss[0].name,
+      cities: ss[0].city,
+    });
+    // console.log(ss[0].city)
   };
   return (
     <React.Fragment>
@@ -95,7 +105,7 @@ const GuideProcess = () => {
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               {citiesAccording.map((d, index) => {
                 return (
-                  <li key={index} onClick={() => handleSelectCity(d.city)}>
+                  <li key={index} onClick={() => handleSelectCity(d.city, d)}>
                     <span className="dropdown-item">{d.city}</span>
                   </li>
                 );

@@ -7,7 +7,6 @@
   "created_at": "2021-03-22T23:56:15.353842Z",
   "updated_at": "2021-03-23T00:27:51.82595Z"
 },
-
 {
   "id": "22d1de77-12d3-449b-801c-bb90889b7ed4",
   "procedure_id": "09e1ae77-52b1-449b-801c-bb90357b7ed4",
@@ -20,34 +19,6 @@
 {
   "id": "33d1de77-12d3-449b-801c-bb90889b7ed4",
   "procedure_id": "09e1ae77-52b1-449b-801c-bb90357b7ed4",
-  "name": "Step 3",
-  "rank": 3,
-  "description": "My third step",
-  "created_at": "2021-03-22T23:56:15.353842Z",
-  "updated_at": "2021-03-23T00:27:51.82595Z"
-},
-{
-  "id": "11d1de77-12d3-449b-801c-bb90889b7grter4",
-  "procedure_id": "ce97f6db-ca95-4356-aeb3-b155c19dfa58",
-  "name": "Step 1",
-  "rank": 1,
-  "description": "My first step",
-  "created_at": "2021-03-22T23:56:15.353842Z",
-  "updated_at": "2021-03-23T00:27:51.82595Z"
-},
-
-{
-  "id": "22d1de77-12d3-449b-801c-bb90889b7ed4",
-  "procedure_id": "ce97f6db-ca95-4356-aeb3-b155c19dfa58",
-  "name": "Step 2",
-  "rank": 2,
-  "description": "My second step",
-  "created_at": "2021-03-22T23:56:15.353842Z",
-  "updated_at": "2021-03-23T00:27:51.82595Z"
-},
-{
-  "id": "33d1de77-12d3-449b-801c-bb90889b7ed4",
-  "procedure_id": "ce97f6db-ca95-4356-aeb3-b155c19dfa58",
   "name": "Step 3",
   "rank": 3,
   "description": "My third step",
