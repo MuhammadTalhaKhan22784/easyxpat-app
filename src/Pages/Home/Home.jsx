@@ -16,6 +16,7 @@ const Home = () => {
   }, []);
   return (
     <React.Fragment>
+      {/* home page components start*/}
       <div className="hero">
         <HomeHero />
         <NeedWhat />
@@ -62,6 +63,7 @@ const Home = () => {
           img={Illustration1}
         />
       </div>
+      {/* home page components end*/}
       <Footer />
     </React.Fragment>
   );

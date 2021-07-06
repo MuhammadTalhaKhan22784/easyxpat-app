@@ -11,11 +11,14 @@ const About = () => {
   }, []);
   return (
     <>
+    {/* about page */}
       <Header />
+      {/* about page components start*/}
       <Box className="about_wrapper">
         <AboutUsComp />
         <AvailableGuide />
       </Box>
+      {/* about page components end*/}
       <Footer2 />
     </>
   );

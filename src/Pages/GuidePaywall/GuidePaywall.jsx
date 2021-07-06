@@ -11,8 +11,10 @@ const GuidePaywall = () => {
   return (
     <React.Fragment>
       <Header />
+      {/* guidepaywall page components start*/}
       <GuideProcess />
       <AdditionalLink />
+      {/* guidepaywall page components start*/}
       <Footer2 />
     </React.Fragment>
   );
